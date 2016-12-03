@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设备运行服务台</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="X-UA-Compatible" content="IE-edge" />
+		<meta name="renderer" content="webkit" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<style type="text/css">
+			body {
+				background: url(img/bg4.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.container {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			
+			.zuo {
+				position: relative;
+			}
+			
+			.logo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -100px;
+				margin-left: -30px;
+			}
+			
+			.you {
+				background: #7eb4cb;
+				opacity: 0.8;
+				position: relative;
+			}
+			
+			.loginbox {
+				padding-left: 100px;
+				width: 350px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+			}
+			
+			.loginbox .checkbox,
+			.loginbox .text-warning {
+				margin-top: 5px;
+				padding-top: 10px;
+				font-size: 12px;
+				line-height: 20px;
+			}
+			
+			.loginbox .text-error {
+				margin-top: 5px;
+				font-size: 12px;
+				line-height: 1;
+				margin-bottom: 15px;
+				display: block;
+			}
+			
+			form {
+				margin: 0 0 20px;
+			}
+			
+			legend {
+				display: block;
+				width: 100%;
+				padding: 0;
+				padding-bottom: 15px;
+				font-size: 16px;
+				line-height: 1;
+				color: #333333;
+				border: 0;
+			}
+			
+			.text-warning {
+				color: #c09853;
+			}
+			
+			a.text-warning:hover {
+				color: #a47e3c;
+			}
+			
+			.text-error {
+				color: #b94a48;
+			}
+			
+			a.text-error:hover {
+				color: #953b39;
+			}
+			
+			input[type="text"],
+			input[type="password"] {
+				height: 40px;
+				line-height: 40px;
+				margin-top: 5px;
+				box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+				border-radius: 5px;
+				width: 280px;
+			}
+			
+			form a {
+				display: inline-block;
+				padding: 5px 10px;
+				background: #fff;
+				border-radius: 10px;
+				margin-right: 20px;
+				width: 80px;
+				color: #333;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			
+			form a:hover {
+				text-decoration: none;
+			}
+			
+			.modal-body {
+				padding: 40px!important;
+			}
+			.modal{left:2%;top:22%;}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 zuo text-center">
+					<div class="logo">
+						<img src="img/logo.png" / accesskey="">
+						<h3 style="color:#999;">设备运行服务台</h3>
+					</div>
+				</div>
+				<!--左侧logo区-->
+				<div class="col-lg-6 you">
+					<div class="loginbox">
+						<form id="reg-form" action="" method="post">
+							<fieldset>
+								<input type="text" name="name" id="name" placeholder="用户名" data-valid="name" /><br />
+								<span id="name-tip" class="muted" style="display:none">数字、字母、中文 2-30个字符</span>
+								<span id="name-error" class="text-error" style="display:none">格式不正确</span>
+								<input id="passwd" name="passwd" value="" type="password" placeholder="密码" data-valid="passwd">
+								<span id="passwd-tip" class="muted" style="display:none">至少包含字母和数字，最短8个字符，区分大小写</span>
+								<span id="passwd-error" class="text-error" style="display:none">至少包含字母和数字，最短8个字符，区分大小写</span>
+								<div class="clearfix">
+									<a href="background.html" id="submit" class="btn btn-primary pull-right">登录</a>
+								</div>
+								<a href="">QQ登录</a> <a href="#ymodal" data-toggle="modal">游客登录</a>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="modal fade" id="ymodal" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header text-justify">
+								<button class="close" data-dismiss="modal">×</button>
+								<h4>登录身份</h4>
+							</div>
+							<div class="modal-body">
+								<input type="radio" name="shenfen" id="shenfen" value="" />游客身份
+								<input type="radio" name="shenfen" id="shenfen" value="" />运营商
+								<br />
+								<a href="background.html" class="btn btn-primary pull-right" data-dismiss="modal" style="margin-left:30px;">登录</a>
+							</div>
+
+						</div>
+					</div>					
+				</div>
+			</div>
+			<script src="js/jquery-1.12.4.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/zhuce.js"></script>
+	</body>
+
+</html>

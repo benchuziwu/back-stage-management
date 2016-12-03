@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/validator.css" />
+		<link rel="stylesheet" type="text/css" href="css/mag.css" />
+	</head>
+
+	<body>
+		<!--顶部导航开始-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dingbunav">
+				        <span class="sr-only">折叠菜单</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      </button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+				<!--end .navbar-header-->
+				<div class="collapse navbar-collapse menu" id="dingbunav">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><span style="z-index:999;" title="折叠展开菜单" class="glyphicon glyphicon-resize-full dianji"></span></a></li>
+
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="搜索">
+						</div>
+						<button type="submit" class="btn btn-default">提交</button>
+					</form>
+					<!--end 左侧导航-->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" title="最新报告"><span class="glyphicon glyphicon-list-alt btn-lg"></span></a></li>
+						<li><a href="#" title="最新报警"><span class="glyphicon glyphicon-warning-sign btn-lg"></span><span class="badge">2</span></a>
+
+						</li>
+						<li class="xiaoxi"><a href="#" title="最新消息"><span class="glyphicon glyphicon-comment btn-lg"></span><span class="badge">2</span></a>
+							<!--消息提示框开始-->
+							<div class="panel panel-default xiaoxixiala" style="display:none;">
+								<div class="panel-heading">消息提示框</div>
+								<div class="panel-body">
+									<ul class="list-group">
+										<li class="list-group-item">
+											<div class="media">
+												<a class="media-left pull-left" href="#">
+													<img src="img/12.jpg" class="img-circle">
+												</a>
+												<div class="media-body pull-left">
+													<h4 class="media-heading">南山南 </h4>
+													<p class="wenben pull-left">系统该更新了</p>
+													<a href="#" class="pull-right new">新消息</a>
+												</div>
+											</div>
+										</li>
+										<!--第一条留言结束-->
+										<li class="list-group-item">
+											<div class="media">
+												<a class="media-left pull-left" href="#">
+													<img src="img/05.jpg" class="img-circle">
+												</a>
+												<div class="media-body pull-left">
+													<h4 class="media-heading">北山北</h4>
+													<div class="clearfix">
+														<p class="wenben pull-left">系统该更新了系统该更新了系统该更新了系统该更新了系统该更新了</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!--第二条留言结束-->
+
+									</ul>
+								</div>
+							</div>
+							<!--消息提示框结束-->
+						</li>
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" style="margin:0;padding:0;" data-toggle="dropdown"><img src="img/7.jpg" / style="width:40px;height:40px;border-radius:50%;">本初子午<span class="glyphicon glyphicon-chevron-down btn-sm"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">个人信息</a></li>
+								<li><a href="#">修改密码</a></li>
+								<li><a href="#">退出</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- end 右侧导航-->
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--顶部导航结束-->
+		<!--左侧菜单开始-->
+		<div class="container zuoce">
+			<div class="row">
+				<div class="col-lg-2">
+					<nav class="navbar navbar-default nav-stacked">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="dingbu">
+							<ul class="nav navbar-nav panel-group" id="father">
+								<li class="pane" id="shebei1">
+									<div class="panel-heading">
+										<a title="设备管理" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-cog " ></span>设备管理							
+									</a>
+									</div>
+
+								</li>
+								<li class="panel">
+									<div class="panel-heading">
+										<a href="#clp-2" title="操作流程" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-pencil" ></span>操作流程<span class="glyphicon glyphicon-chevron-right btn-sm"></span>									
+									</a>
+									</div>
+									<div id="clp-2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item" id="shebeifenxi1"><span class="
+glyphicon glyphicon-file marginleft"></span>设备分析</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-ok marginleft"></span>指标分析</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-repeat marginleft"></span>黑盒算法</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-bookmark marginleft"></span>结构分析</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-check marginleft"></span>报警分析</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="panel hoverevent">
+									<div class="panel-heading">
+										<a href="#clp-3" title="运行分析" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-refresh" ></span>运行分析<span class="glyphicon glyphicon-chevron-right btn-sm"></span>									
+									</a>
+									</div>
+									<div id="clp-3" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item">
+													<span class="
+glyphicon glyphicon-file marginleft"></span>巡检
+												</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-ok marginleft"></span>分析</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-repeat marginleft"></span>评估</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-bookmark marginleft"></span>建议</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="panel">
+									<div class="panel-heading">
+										<a title="分析评估" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-road" ></span>分析评估							
+									</a>
+									</div>
+								</li>
+								<li class="panel">
+									<div class="panel-heading">
+										<a title="工单管理" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-eye-open" ></span>工单管理								
+									</a>
+									</div>
+								</li>
+								<li class="panel">
+									<div class="panel-heading">
+										<a href="#clp-1" title="服务统计" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-eye-open" ></span>服务统计<span class="glyphicon glyphicon-chevron-right btn-sm"></span>								
+									</a>
+									</div>
+									<div id="clp-1" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-file marginleft "></span>服务商单位</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-ok marginleft "></span>设备</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-repeat marginleft "></span>探针</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-bookmark marginleft "></span>分析评估</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-bookmark marginleft "></span>报警</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-repeat marginleft "></span>账户日志</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-bookmark marginleft "></span>报告报表</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="panel">
+									<div class="panel-heading">
+										<a href="#dan" id="huiyuanguanli1" title="用户设置" class="panel-title" data-parent="#father" data-toggle="collapse"><span class="marginleft glyphicon glyphicon-user" ></span>会员管理<span class="glyphicon glyphicon-chevron-right btn-sm"></span>								
+									</a>
+									</div>
+									<div id="dan" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item" id="yonghu1"><span class="
+glyphicon glyphicon-file marginleft"></span>用户信息</li>
+												<li class="list-group-item"><span class="
+glyphicon glyphicon-ok marginleft"></span>员工信息</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</nav>
+				</div>
+
+			</div>
+		</div>
+		<!--左侧菜单结束-->
+		<!--设备管理内容区开始-->
+		<div class="container content">
+			<div class="row">
+				<!--设备管理开始-->
+				<div class="col-lg-12 con" id="shebei" style="display:none;">
+					<div class="h3">
+						首页/<span class="h4" style="color:#aed0a7;">设备管理</span>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div id="main" style="width:600px;height:400px;"></div>
+						</div>
+						<div class="col-lg-6">
+							<div id="second" style="width:600px;height:400px;"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="col-lg-6" style="padding:0 20px;">
+								<div class="panel tubiao purple row" style="box-shadow:0 3px 5px #264473;">
+									<div class="col-lg-4">
+										<span class="glyphicon glyphicon-search tubiao" style="line-height:100px;"></span>
+									</div>
+									<div class="col-lg-8">
+										<h2>230</h2>
+										<h4>直接访问</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6" style="padding:0 20px;">
+								<div class="panel tubiao  row" style="background:#5ab6df;box-shadow:0 3px 5px #009FE9;">
+									<div class="col-lg-4">
+										<span class="glyphicon glyphicon-search tubiao" style="line-height:100px;"></span>
+									</div>
+									<div class="col-lg-8">
+										<h2>230</h2>
+										<h4>直接访问</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6" style="padding:0 20px;">
+								<div class="panel tubiao  row" style="background:#fc8675;box-shadow:0 3px 5px #d53a35;">
+									<div class="col-lg-4">
+										<span class="glyphicon glyphicon-search tubiao" style="line-height:100px;"></span>
+									</div>
+									<div class="col-lg-8">
+										<h2>230</h2>
+										<h4>直接访问</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6" style="padding:0 20px;margin-bottom:60px;">
+								<div class="panel tubiao  row" style="background:#4acacb;box-shadow:0 3px 5px #00B83F;">
+									<div class="col-lg-4">
+										<span class="glyphicon glyphicon-search tubiao" style="line-height:100px;"></span>
+									</div>
+									<div class="col-lg-8">
+										<h2>230</h2>
+										<h4>直接访问</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									最近计划
+									<span class="glyphicon glyphicon-remove pull-right" id="removejihua" style="color:#666;background:#aaa;margin-left:10px;padding:5px;cursor:pointer;"></span>
+									<span class="glyphicon glyphicon-chevron-down pull-right" style="color:#666;background:#aaa;padding:5px"></span>
+
+								</div>
+								<div class="panel-body">
+									<p>搜索引擎</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%
+										</div>
+									</div>
+									<p>视频广告</p>
+									<div class="progress">
+
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%
+										</div>
+									</div>
+									<p>运营广告</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-danger  active" style="width: 70%;min-width: 3em;">
+											70%
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end col-lg-6-->
+
+					</div>
+					<div class="row">
+						<div class=" col-md-4">
+							<div class="thumbnail">
+								<img data-src="holder.js/300x300" src="img/mayun.jpg">
+								<div class="caption">
+									<h3>责任人一</h3>
+									<p>主要负责对设备的运营维护,确保设备的正常使用.</p>
+									<p><a href="#" class="btn btn-primary pull-right">详情
+</a> <a href="#" class="btn btn-default pull-right liuyan" style="margin-right:10px;">留言</a></p>
+								</div>
+							</div>
+						</div>
+						<div class=" col-md-4">
+							<div class="thumbnail">
+								<img src="img/ma.jpg">
+								<div class="caption">
+									<h3>责任人二</h3>
+									<p>负责开发平台,为设备的正常运营奠定基础.</p>
+									<p><a href="#" class="btn btn-primary pull-right">详情</a>
+										<a href="#" class="btn btn-default pull-right liuyan" style="margin-right:10px;">留言</a></p>
+								</div>
+							</div>
+						</div>
+						<div class=" col-md-4">
+							<div class="thumbnail">
+								<img src="img/liuqiangdong.jpg">
+								<div class="caption">
+									<h3>责任人三</h3>
+									<p>负责对设备运营过程中的故障维护与修理.</p>
+									<p><a href="#" class="btn btn-primary pull-right">详情</a>
+										<a href="#" class="btn btn-default pull-right liuyan" style="margin-right:10px;">留言</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end row-->
+					<!--留言区modal开始-->
+					<div class="modal fade" id="feedback" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">×</button>
+									<h4 class="modal-title" id="myModalLabel">您的建议是我们不断进步的动力</h4>
+								</div>
+								<div class="modal-body">
+									<textarea name="fk" id="fk" class="form-control" rows="7" cols="" placeholder="留言区"></textarea>
+									<br /><br />
+									<input type="text" id="fklink" name="fklink" id="" value="" class="form-control" placeholder="您的Email或QQ" /><br />
+								</div>
+								<div class="modal-footer">
+									<br />
+									<button id="btn_fd_cancel" class="btn btn-default" data-dismiss="modal">取消</button>
+									<button id="btn_fd" class="btn btn-primary liouyantijiao" data-dismiss="modal">提交</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--留言区modal结束-->
+				</div>
+				<!--设备管理结束-->
+				<!--用户上传信息开始-->
+				<div class="col-lg-12 con" id="yonghu" style="display:none">
+					<div class="row">
+						<div class="h4" style="margin-left:10px;">
+							会员管理/<small>会员资料变更</small>
+						</div>
+						<div class="kong"></div>
+					</div>
+					<table class="xinxi" border="0px" style="font-size:12px" width="630px">
+						<tr>
+							<td align="right">会员名:</td>
+							<td><input type="text" id="test1" style="width:120px" /></td>
+							<td>
+								<div id="test1Tip" style="width:250px"></div>
+							</td>
+						</tr>
+						<tr style="height:60px">
+							<td align="right">密码:</td>
+							<td><input type="password" id="password1" style="width:120px" /></td>
+							<td>
+								<div id="password1Tip" style="width:250px"></div>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">重复密码:</td>
+							<td><input type="password" id="password2" style="width:120px" /></td>
+							<td>
+								<div id="password2Tip" style="width:250px"></div>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">你的性别:</td>
+							<td><input type="radio" id="sex" value="1" name="sex" /> 男&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="sex1" value="2" name="sex" /> 女
+							</td>
+							<td>
+								<div id="sexTip" style="width:250px"></div>
+							</td>
+						</tr>
+						<tr style="height:60px;">
+							<td align="right">出生日期:</td>
+							<td><input type="text" id="txtDate" class="Wdate" /></td>
+							<td>
+								<div id="csnyTip" style="width:250px"></div>
+							</td>
+						</tr>
+						<div class="form-group">
+							<label for="exampleInputEmail1">邮箱地址</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入您的邮箱地址">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">密码</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+						</div>
+						<tr class="form-group">
+							<input type="file" onchange="previewImage(this)" value="上传近期文件" />
+							<!--<label for="exampleInputFile">上传文件</label>
+							<input type="file" id="exampleInputFile">
+							<p class="help-block">文件地址</p>-->
+							<div id="preview">
+								<img id="imghead" border=0 width="180" height="180" />
+							</div>
+						</tr>
+						<tr>
+							<td align="right" valign="top">在这里写下您的要求:</td>
+							<td colspan="2" valign="top"><textarea id="ms" cols="50" rows="10"></textarea>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--用户上传信息结束-->
+				<!--会员管理开始-->
+				<div class="col-lg-12 con" id="shebeifenxi" style="display:none">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="kong"></div>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="11-11,全国光棍们的大联欢!">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">新闻动态<span class="caret"></span></button>
+									<ul class="dropdown-menu dropdown-menu-right" role="menu">
+										<li><a href="#">新闻动态<span class="badge">4</span></a></li>
+										<li><a href="#">网站新闻</a></li>
+										<li><a href="#">院长信箱</a></li>
+										<li class="divider"></li>
+										<li><a href="#">企业信箱</a></li>
+									</ul>
+								</div>
+								<!-- /btn-group -->
+							</div>
+							<!-- /input-group -->
+						</div>
+						<!-- /.col-lg-6 -->
+					</div>
+					<!-- /.row -->
+					<div class="kong"></div>
+					<div class="row" style="margin-top:20px;">
+						<form action="#" method="post" class="pull-left col-lg-6">
+							<table>
+								<tr>
+									<th width="180">每页显示内容数:</th>
+									<td>
+										<select name="search-sort" id="select">
+                                    <option value="">10</option>
+                                    <option value="19">5</option>
+                                     <option value="20">10</option>
+                                    <option value="21">15</option>
+                                    <option value="22">20</option>
+                                </select>
+									</td>
+									<th width="120">选择分类:</th>
+									<td>
+										<select name="search" id="type">
+                                    <option value="">全部</option>
+                                    <option value="19">直接访问</option>
+                                     <option value="20">搜索引擎</option>
+                                    <option value="21">邮件营销</option>
+                                    <option value="22">联盟广告</option>
+                                    <option value="22">视频广告</option>                         
+                                </select>
+									</td>
+									<th width="70" ;>关键字:</th>
+									<td><input class="common-text" placeholder="关键字" name="keywords" value="" id="search" type="text"></td>
+									<td><input class="btn btn-primary btn-sm" name="sub" value="查询" type="button"></td>
+								</tr>
+							</table>
+						</form>
+
+						<!--上下箭头切换开始-->
+						<div class=" col-lg-6">
+							<ul class="pagination pull-right" style="padding:0;margin:0;">
+								<li class="pre"><a href="#">&laquo;</a></li>
+								<li class="active first"><a href="#">1</a></li>
+								<li class="second"><a href="#">2</a></li>
+								<li class="third"><a href="#">3</a></li>
+								<li class="fourth"><a href="#">4</a></li>
+								<li class="fifth"><a href="#">5</a></li>
+								<li class="next"><a href="#">&raquo;</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="panel panel-default huiyuan">
+						<!-- Default panel contents -->
+						<div class="panel-heading">会员管理</div>
+						<div class="panel-body">
+							<p class="h6">用户登录情况汇总</p>
+						</div>
+						<!-- Table -->
+						
+						<div class="table1">
+<table  class="table table-hover text-center">
+							<tr>
+									<th><a class="all">全选</a></th>
+									<th>用户名</th>
+									<th>联系电话</th>
+									<th>访问来源</th>
+									<th>上次登录时间</th>
+									<th>操作</th>
+								</tr>
+						</table>
+							<table id="table" class="table table-hover text-center aaa">
+								
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人甲1</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-01</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人乙2</td>
+									<td>18335908257</td>
+									<td class="type">直接访问</td>
+									<td>2016-11-02</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丙3</td>
+									<td>18335908257</td>
+									<td class="type">视频广告</td>
+									<td>2016-11-03</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丁4</td>
+									<td>18335908257</td>
+									<td class="type">直接访问</td>
+									<td>2016-11-04</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>王子涵5</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-05</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>花花6</td>
+									<td>18335908257</td>
+									<td class="type">联盟广告</td>
+									<td>2016-11-06</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人甲7</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-07</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人乙8</td>
+									<td>18335908257</td>
+									<td class="type">视频广告</td>
+									<td>2016-11-08</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丙9</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-09</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丁10</td>
+									<td>18335908257</td>
+									<td class="type">邮件营销</td>
+									<td>2016-11-10</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>王子涵11</td>
+									<td>18335908257</td>
+									<td class="type">直接访问</td>
+									<td>2016-11-11</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>花花12</td>
+									<td>18335908257</td>
+									<td class="type">邮件营销</td>
+									<td>2016-11-12</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人甲13</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-13/td>
+										<td>
+											<button class="xiugai" onclick="xiugai(this)">修改</button>
+											<button class="shanchu">删除</button>
+										</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人乙14</td>
+									<td>18335908257</td>
+									<td class="type">直接访问</td>
+									<td>2016-11-14</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丙15</td>
+									<td>18335908257</td>
+									<td class="type">直接访问</td>
+									<td>2016-11-15</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丁16</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-16</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>王子涵17</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-11</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>花花18</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-10-08</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人甲19</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-18-14</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr name="">
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人乙20</td>
+									<td>18335908257</td>
+									<td class="type">联盟广告</td>
+									<td>2016-10-29</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丙21</td>
+									<td>18335908257</td>
+									<td class="type">联盟广告</td>
+									<td>2016-11-01</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>路人丁22</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-11</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>王子涵23</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-11</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="newslist" type="checkbox" /></td>
+									<td>花花24</td>
+									<td>18335908257</td>
+									<td class="type">搜索引擎</td>
+									<td>2016-11-11</td>
+									<td>
+										<button class="xiugai" onclick="xiugai(this)">修改</button>
+										<button class="shanchu">删除</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<!-- 点击删除Modal开始 -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title" id="myModalLabel">仔细阅读以下信息</h4>
+									</div>
+									<div class="modal-body">
+										您确定要删除这条信息吗?
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default shanchuqueding" data-dismiss="modal">确定</button>
+										<button type="button" class="btn btn-primary">取消</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 点击删除Modal结束 -->
+
+						<!-- 点击修改Modal开始 -->
+						<div class="modal fade" id="xiugai">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title" id="myModalLabel">您可以修改如下信息</h4>
+									</div>
+									<div class="modal-body">
+										修改用户名:<input type="text" name="name" id="" value="" /> 修改电话号码:
+										<input type="text" name="telphone" id="" value="" />
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default xiugaiqueding" data-dismiss="modal">确定</button>
+										<button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 点击修改Modal结束 -->
+						<div class="row">
+							<div class="pull-right"style="margin-right:20px;">
+								<input type=button id="btn1" value="首页">
+								<input type=button id="btn2" value="上一页">
+								<input type=button id="btn3" value="下一页">
+								<input type=button id="btn4" value="尾页">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--会员管理结束-->
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/WdatePicker.js"></script>
+		<script src="formValidator.js"></script>
+		<script src="js/mag.js"></script>
+		<script type="text/javascript">
+			/*关键字搜索开始*/
+			$('body').on("propertychange input", '#search', function() {
+				var searchvalue = $('#search').val();
+				if (searchvalue == '') {
+					$('.aaa tr').show();
+				} else {
+					$('.aaa tr').each(function() {
+						var pinyin = $(this).text();
+						if (pinyin.indexOf(searchvalue) != -1) {
+							$(this).show();
+							$('.aaa tr').eq(0).show();
+						} else {
+							$(this).hide();
+							$('.aaa tr').eq(0).show();
+						}
+					})
+				}
+			});
+			/*关键字搜索结束*/
+			/*点击修改开始*/
+			function xiugai(obj) {
+				var $obj = $(obj)
+				$obj.attr('data-toggle', 'modal');
+				$obj.attr('data-target', '#xiugai')
+				var yonghuming = $obj.parent().siblings().eq(1).text();
+				var dianhua = $obj.parent().siblings().eq(2).text();
+				$('input[name=name]').val(yonghuming);
+				$('input[name=telphone]').val(dianhua);
+				$('.xiugaiqueding').on('click', function() {
+					$obj.parent().siblings().eq(1).text($('input[name=name]').val());
+					$obj.parent().siblings().eq(2).text($('input[name=telphone]').val());
+				})
+			} /*点击修改结束*/
+		</script>
+	</body>
+
+</html>
