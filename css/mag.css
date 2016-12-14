@@ -60,7 +60,7 @@ a:hover{text-decoration:none;}
 
 /*内容区设备管理开始*/
 .container.content{padding-left:30px!important;position:relative;}
-.container.content .col-lg-12{position:absolute,top:0;left:0;}
+.container.content .col-lg-12{position:absolute,top:;0;left:0;}
 .gongdan{border-radius:10px;}
 .panel.tubiao{height:100px;box-sizing:border-box;color:#fff;border-radius:5px!important;margin:10px 10px 0!important;}
 /*内容区设备管理结束*/
